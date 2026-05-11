@@ -5,9 +5,17 @@ It aliases `cd` to add the functionality.
 To install, simply append the code to your `.bashrc`, re-source it or log-out and -in again.
 
 The function looks for the files `.python-version` and `.python-virtualenv` in the current directory and, recursively, up the tree, until it reaches either the user's home or `/`.
-If it doesn't find the files, it deactivates an active `pyenv` virtualenv, If it finds the files, it tries to activate this particular environment.
+If it doesn't find the files, it deactivates an active `pyenv` virtualenv, if it finds them, it tries to activate this particular environment.
 
 You can install `pyenv` with `curl https://pyenv.run | bash` and follow the instructions in the terminal to set it up.
+
+#### .python-virtualenv
+
+This file only contains the name of the virtualenv.
+
+#### .python-version
+
+This file contains the python version you defined when you created the virtualenv.
 
 ## Script
 
