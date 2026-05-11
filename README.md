@@ -2,7 +2,7 @@
 
 This helper automatically activates/deactivates `pyenv` based virtualenvs when changing directories.
 It aliases `cd` to add the functionality.
-To install, simply append the code to your `.bashrc`, re-source it or log-out and -in again.
+To *install*, simply append the code to your `.bashrc` and start a new terminal session.
 
 The function looks for the files `.python-version` and `.python-virtualenv` in the current directory and, recursively, up the tree, until it reaches either the user's home or `/`.
 If it doesn't find the files, it deactivates an active `pyenv` virtualenv, if it finds them, it tries to activate this particular environment.
